@@ -21,9 +21,7 @@ void move_all_negatice_at_begining(int arr[], int n)
             if (i != start)
             {
                 //swapping conditions...
-                int temp = arr[i];
-                arr[i] = arr[start];
-                arr[start] = temp;
+                 swap(arr[i], arr[start]);
                 //after swapping increase the starting index...
                 start++;
             }
