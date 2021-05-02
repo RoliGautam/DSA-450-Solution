@@ -9,6 +9,25 @@ void printArray(int arr[], int size){
     }
 }
 
+// another solutin with less array pass
+
+void sort012(int arr[], int n)
+{
+    int zero = 0, two = n-1, i = 0;
+    while(i <= two){
+        if(arr[i]==0){
+            swap(arr[i], arr[zero]);
+            zero++;
+            i++;
+        }
+        else if(arr[i] == 2){
+            swap(arr[i], arr[two]);
+            two--;
+        }
+        else i++;
+    }
+}
+
 //the funtion to sort the array...
 void sortArray(int arr[], int size){
     //here, we initializing the no of count as 0 for all 0,1, and 2 
